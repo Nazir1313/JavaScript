@@ -28,7 +28,7 @@ let big = 123n;         //big number
 let obj = {a: 1};       // object=> key = value
 
 
-//===================================================function's==================================================
+//===================================================if==================================================
 let age = 19;
 
 if (age >= 18){     // statemend if
@@ -44,3 +44,32 @@ if (user_name === "Hadi"){
 }else{
     console.log("Undefind")
 }
+
+
+
+//===================================================function's==================================================
+function square(base){
+    return base ** 2
+}
+console.log(square(3)) // square function 
+
+
+function odd(base){
+    if (base % 2 === 0){
+    return "ok"             // function => choice odd number
+    }else{
+        return "No"
+    }
+}
+console.log(odd(2))
+
+
+function range_num(number1){
+    if (number1 >= 0 && number1 <= 100){
+        return "number in rang"         // function difine range 0 _ 100
+    }else{
+        return "Not in rang"
+    }
+}
+
+console.log(range_num(10))
